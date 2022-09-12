@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import { useGlobalContext } from '../Context'
 import {useNavigate} from 'react-router-dom'
 
-
 const Test1 = () => {
  const [timerCount, setTimercount] = useState(true);
  const {quiz1, timer, score, setScore, onClickReset} = useGlobalContext()

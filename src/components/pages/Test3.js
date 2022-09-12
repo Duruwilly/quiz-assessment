@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useGlobalContext } from "../Context";
-import { QuizData } from "../QuizData";
 import { useNavigate } from "react-router-dom";
 
 const Test3 = () => {
