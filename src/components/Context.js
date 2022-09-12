@@ -13,6 +13,7 @@ export const QuizProvider = ({ children }) => {
   const [quiz4, setQuiz4] = useState([QuizData[3]]);
   const [quiz5, setQuiz5] = useState([QuizData[4]]);
   const [userName, setuserName] = useState('')
+  const [btnDisabled, setBtnDisabled] = useState(false)
 
   const onChange = (e) => {
    setuserName(e.target.value)
@@ -83,6 +84,8 @@ export const QuizProvider = ({ children }) => {
      timer,
      score,
      QuizData,
+     btnDisabled,
+     setBtnDisabled,
      setScore,
      getDeadTime,
      clearTimer,

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Test5 = () => {
   const [timerCount, setTimercount] = useState(true);
-  const { quiz5, timer, score, setScore } =
+  const { quiz5, timer, score, setScore, btnDisabled, setBtnDisabled } =
     useGlobalContext();
   const navigate = useNavigate();
   const disabled = () => {
@@ -27,6 +27,7 @@ const Test5 = () => {
   const onSubmitForm = (e) => {
     e.preventDefault();
     navigate("/result");
+    setBtnDisabled(true)
   };
 
   return (
@@ -55,7 +56,7 @@ const Test5 = () => {
                   {quiz.choices.d}
                 </label>
 
-                <button type="submit">submit</button>
+                <button type="submit" disabled={btnDisabled}>submit</button>
               </form>
             </div>
           )}
