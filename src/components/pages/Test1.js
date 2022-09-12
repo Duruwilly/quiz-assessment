@@ -39,22 +39,39 @@ disabled();
             <div>
               <form key={quiz.id} onSubmit={onSubmitForm}>
                 <p>{quiz.question}</p>
-                <input type="radio" id="question1" name="quizQuestion2" />
+                <input
+                  type="radio"
+                  id="question1"
+                  name="quizQuestion2"
+                  onClick={() => onSubmit("a")}
+                />
                 <label htmlFor="question1" onClick={() => onSubmit("a")}>
                   {quiz.choices.a}
                 </label>
-                <input type="radio" id="question2" name="quizQuestion2" />
+                <input
+                  type="radio"
+                  id="question2"
+                  name="quizQuestion2"
+                  onClick={() => onSubmit("b")}
+                />
                 <label htmlFor="question2" onClick={() => onSubmit("b")}>
                   {quiz.choices.b}
                 </label>
-                <input type="radio" id="question3" name="quizQuestion2" />
-                <label
-                  htmlFor="question3"
-                  onClick={() => onSubmit('c')}
-                >
+                <input
+                  type="radio"
+                  id="question3"
+                  name="quizQuestion2"
+                  onClick={() => onSubmit("c")}
+                />
+                <label htmlFor="question3" onClick={() => onSubmit("c")}>
                   {quiz.choices.c}
                 </label>
-                <input type="radio" id="question4" name="quizQuestion2" />
+                <input
+                  type="radio"
+                  id="question4"
+                  name="quizQuestion2"
+                  onClick={() => onSubmit("d")}
+                />
                 <label htmlFor="question4" onClick={() => onSubmit("d")}>
                   {quiz.choices.d}
                 </label>
