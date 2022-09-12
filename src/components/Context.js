@@ -13,22 +13,11 @@ export const QuizProvider = ({ children }) => {
   const [quiz3, setQuiz3] = useState([QuizData[2]]);
   const [quiz4, setQuiz4] = useState([QuizData[3]]);
   const [quiz5, setQuiz5] = useState([QuizData[4]]);
-  const [values, setValues] = useState({
-   userName: '',
-  })
-
-
-  const {
-   userName,
-  } = values
+  const [userName, setuserName] = useState('')
 
   const onChange = (e) => {
-   setValues((prevState) => ({
-    ...prevState, [e.target.name]: e.target.value
-   }))
+   setuserName(e.target.value)
   }
-                                                                         
-
 
   const [timer, setTimer] = useState("00:00:00");
 
