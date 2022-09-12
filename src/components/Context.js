@@ -1,5 +1,4 @@
 import React, { useState, useContext, createContext, useEffect, useRef } from "react";
-import axios from "axios";
 import { QuizData } from "./QuizData";
 
 const QuizContext = createContext();
@@ -83,6 +82,7 @@ export const QuizProvider = ({ children }) => {
      quiz5,
      timer,
      score,
+     QuizData,
      setScore,
      getDeadTime,
      clearTimer,
